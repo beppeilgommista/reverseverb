@@ -70,3 +70,9 @@ juce::AudioProcessorEditor* DynamicConvolutionReverbAudioProcessor::createEditor
     // Returns a generic editor for now. We will build the actual GUI later.
     return new juce::GenericAudioProcessorEditor (*this);
 }
+
+// Required factory function for JUCE plugin instantiation
+juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
+{
+    return new DynamicConvolutionReverbAudioProcessor();
+}

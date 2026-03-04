@@ -15,6 +15,9 @@ juce_add_plugin(DynamicConvolutionReverb
     PLUGIN_CODE "Dcrv"
 )
 
+# Generate the JUCE header that aggregates module includes; required for <JuceHeader.h>
+juce_generate_juce_header(DynamicConvolutionReverb)
+
 target_sources(DynamicConvolutionReverb PRIVATE
     Source/PluginProcessor.cpp
     Source/PluginProcessor.h
@@ -25,10 +28,12 @@ target_sources(DynamicConvolutionReverb PRIVATE
 target_compile_definitions(DynamicConvolutionReverb PUBLIC
     JUCE_WEB_BROWSER=0
     JUCE_USE_CURL=0
+    JUCE_IGNORE_VST3_MISMATCHED_PARAMETER_ID_WARNING=1
 )
 
 # Crucial: Link the DSP module
 target_link_libraries(DynamicConvolutionReverb PRIVATE
     juce::juce_audio_utils
     juce::juce_dsp
+    asound
 )
