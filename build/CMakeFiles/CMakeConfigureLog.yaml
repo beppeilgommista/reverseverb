@@ -837,3 +837,75 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "JUCE/extras/Build/CMake/JUCECheckAtomic.cmake:73 (try_compile)"
+      - "JUCE/extras/Build/CMake/JUCECheckAtomic.cmake:128 (_juce_create_atomic_target)"
+      - "JUCE/extras/Build/CMake/JUCEModuleSupport.cmake:57 (include)"
+      - "JUCE/CMakeLists.txt:50 (include)"
+    directories:
+      source: "/home/test/reverseverb/build/JUCE/check_atomic_dir_tIrl8P9EPUeM8uto/CMakeFiles/CMakeTmp"
+      binary: "/home/test/reverseverb/build/JUCE/check_atomic_dir_tIrl8P9EPUeM8uto/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/test/reverseverb/build/JUCE/check_atomic_dir_tIrl8P9EPUeM8uto/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8bca4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8bca4.dir/build.make CMakeFiles/cmTC_8bca4.dir/build
+        gmake[1]: ingresso nella directory «/home/test/reverseverb/build/JUCE/check_atomic_dir_tIrl8P9EPUeM8uto/CMakeFiles/CMakeTmp»
+        Building CXX object CMakeFiles/cmTC_8bca4.dir/check_atomic_aDYDqP5ro6uoVQVh.cpp.o
+        /usr/bin/c++   -std=c++17 -o CMakeFiles/cmTC_8bca4.dir/check_atomic_aDYDqP5ro6uoVQVh.cpp.o -c /home/test/reverseverb/build/JUCE/check_atomic_aDYDqP5ro6uoVQVh.cpp
+        Linking CXX executable cmTC_8bca4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8bca4.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_8bca4.dir/check_atomic_aDYDqP5ro6uoVQVh.cpp.o -o cmTC_8bca4
+        gmake[1]: uscita dalla directory «/home/test/reverseverb/build/JUCE/check_atomic_dir_tIrl8P9EPUeM8uto/CMakeFiles/CMakeTmp»
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "JUCE/extras/Build/CMake/JUCECheckAtomic.cmake:73 (try_compile)"
+      - "JUCE/extras/Build/CMake/JUCECheckAtomic.cmake:128 (_juce_create_atomic_target)"
+      - "JUCE/extras/Build/CMake/JUCEModuleSupport.cmake:57 (include)"
+      - "JUCE/CMakeLists.txt:50 (include)"
+    directories:
+      source: "/home/test/reverseverb/build/JUCE/check_atomic_dir_QEOA5KsnPe7aCm1t/CMakeFiles/CMakeTmp"
+      binary: "/home/test/reverseverb/build/JUCE/check_atomic_dir_QEOA5KsnPe7aCm1t/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/test/reverseverb/build/JUCE/check_atomic_dir_QEOA5KsnPe7aCm1t/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_36e64/fast
+        gmake[1]: ingresso nella directory «/home/test/reverseverb/build/JUCE/check_atomic_dir_QEOA5KsnPe7aCm1t/CMakeFiles/CMakeTmp»
+        /usr/bin/gmake  -f CMakeFiles/cmTC_36e64.dir/build.make CMakeFiles/cmTC_36e64.dir/build
+        gmake[2]: ingresso nella directory «/home/test/reverseverb/build/JUCE/check_atomic_dir_QEOA5KsnPe7aCm1t/CMakeFiles/CMakeTmp»
+        Building CXX object CMakeFiles/cmTC_36e64.dir/check_atomic_z22RJEjedFZaIP4D.cpp.o
+        /usr/bin/c++   -std=c++17 -o CMakeFiles/cmTC_36e64.dir/check_atomic_z22RJEjedFZaIP4D.cpp.o -c /home/test/reverseverb/build/JUCE/check_atomic_z22RJEjedFZaIP4D.cpp
+        Linking CXX executable cmTC_36e64
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36e64.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_36e64.dir/check_atomic_z22RJEjedFZaIP4D.cpp.o -o cmTC_36e64
+        gmake[2]: uscita dalla directory «/home/test/reverseverb/build/JUCE/check_atomic_dir_QEOA5KsnPe7aCm1t/CMakeFiles/CMakeTmp»
+        gmake[1]: uscita dalla directory «/home/test/reverseverb/build/JUCE/check_atomic_dir_QEOA5KsnPe7aCm1t/CMakeFiles/CMakeTmp»
+        
+      exitCode: 0
+...

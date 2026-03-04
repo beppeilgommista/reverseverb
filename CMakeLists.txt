@@ -10,7 +10,7 @@ juce_add_plugin(DynamicConvolutionReverb
     NEEDS_MIDI_INPUT FALSE
     NEEDS_MIDI_OUTPUT FALSE
     IS_MIDI_EFFECT FALSE
-    FORMATS VST3 AU Standalone
+    FORMATS VST3            # only VST3, standalone and AU removed per user request
     PRODUCT_NAME "DynamicReverb"
     PLUGIN_CODE "Dcrv"
 )

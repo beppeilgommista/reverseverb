@@ -64,7 +64,6 @@ CMAKE_BINARY_DIR = /home/test/reverseverb/build
 
 # The main recursive "all" target.
 all: CMakeFiles/DynamicConvolutionReverb.dir/all
-all: CMakeFiles/DynamicConvolutionReverb_Standalone.dir/all
 all: CMakeFiles/DynamicConvolutionReverb_VST3.dir/all
 all: CMakeFiles/DynamicConvolutionReverb_vst3_helper.dir/all
 all: JUCE/all
@@ -72,7 +71,6 @@ all: JUCE/all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/DynamicConvolutionReverb.dir/codegen
-codegen: CMakeFiles/DynamicConvolutionReverb_Standalone.dir/codegen
 codegen: CMakeFiles/DynamicConvolutionReverb_VST3.dir/codegen
 codegen: CMakeFiles/DynamicConvolutionReverb_vst3_helper.dir/codegen
 codegen: JUCE/codegen
@@ -85,7 +83,6 @@ preinstall: JUCE/preinstall
 # The main recursive "clean" target.
 clean: CMakeFiles/DynamicConvolutionReverb.dir/clean
 clean: CMakeFiles/DynamicConvolutionReverb_All.dir/clean
-clean: CMakeFiles/DynamicConvolutionReverb_Standalone.dir/clean
 clean: CMakeFiles/DynamicConvolutionReverb_VST3.dir/clean
 clean: CMakeFiles/DynamicConvolutionReverb_vst3_helper.dir/clean
 clean: JUCE/clean
@@ -207,7 +204,6 @@ CMakeFiles/DynamicConvolutionReverb.dir/clean:
 # Target rules for target CMakeFiles/DynamicConvolutionReverb_All.dir
 
 # All Build rule for target.
-CMakeFiles/DynamicConvolutionReverb_All.dir/all: CMakeFiles/DynamicConvolutionReverb_Standalone.dir/all
 CMakeFiles/DynamicConvolutionReverb_All.dir/all: CMakeFiles/DynamicConvolutionReverb_VST3.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicConvolutionReverb_All.dir/build.make CMakeFiles/DynamicConvolutionReverb_All.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicConvolutionReverb_All.dir/build.make CMakeFiles/DynamicConvolutionReverb_All.dir/build
@@ -216,7 +212,7 @@ CMakeFiles/DynamicConvolutionReverb_All.dir/all: CMakeFiles/DynamicConvolutionRe
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DynamicConvolutionReverb_All.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/test/reverseverb/build/CMakeFiles 42
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/test/reverseverb/build/CMakeFiles 33
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DynamicConvolutionReverb_All.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/test/reverseverb/build/CMakeFiles 0
 .PHONY : CMakeFiles/DynamicConvolutionReverb_All.dir/rule
@@ -226,7 +222,6 @@ DynamicConvolutionReverb_All: CMakeFiles/DynamicConvolutionReverb_All.dir/rule
 .PHONY : DynamicConvolutionReverb_All
 
 # codegen rule for target.
-CMakeFiles/DynamicConvolutionReverb_All.dir/codegen: CMakeFiles/DynamicConvolutionReverb_Standalone.dir/all
 CMakeFiles/DynamicConvolutionReverb_All.dir/codegen: CMakeFiles/DynamicConvolutionReverb_VST3.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicConvolutionReverb_All.dir/build.make CMakeFiles/DynamicConvolutionReverb_All.dir/codegen
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/test/reverseverb/build/CMakeFiles --progress-num= "Finished codegen for target DynamicConvolutionReverb_All"
@@ -238,38 +233,6 @@ CMakeFiles/DynamicConvolutionReverb_All.dir/clean:
 .PHONY : CMakeFiles/DynamicConvolutionReverb_All.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/DynamicConvolutionReverb_Standalone.dir
-
-# All Build rule for target.
-CMakeFiles/DynamicConvolutionReverb_Standalone.dir/all: CMakeFiles/DynamicConvolutionReverb.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicConvolutionReverb_Standalone.dir/build.make CMakeFiles/DynamicConvolutionReverb_Standalone.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicConvolutionReverb_Standalone.dir/build.make CMakeFiles/DynamicConvolutionReverb_Standalone.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/test/reverseverb/build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31 "Built target DynamicConvolutionReverb_Standalone"
-.PHONY : CMakeFiles/DynamicConvolutionReverb_Standalone.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/DynamicConvolutionReverb_Standalone.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/test/reverseverb/build/CMakeFiles 31
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DynamicConvolutionReverb_Standalone.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/test/reverseverb/build/CMakeFiles 0
-.PHONY : CMakeFiles/DynamicConvolutionReverb_Standalone.dir/rule
-
-# Convenience name for target.
-DynamicConvolutionReverb_Standalone: CMakeFiles/DynamicConvolutionReverb_Standalone.dir/rule
-.PHONY : DynamicConvolutionReverb_Standalone
-
-# codegen rule for target.
-CMakeFiles/DynamicConvolutionReverb_Standalone.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicConvolutionReverb_Standalone.dir/build.make CMakeFiles/DynamicConvolutionReverb_Standalone.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/test/reverseverb/build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31 "Finished codegen for target DynamicConvolutionReverb_Standalone"
-.PHONY : CMakeFiles/DynamicConvolutionReverb_Standalone.dir/codegen
-
-# clean rule for target.
-CMakeFiles/DynamicConvolutionReverb_Standalone.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicConvolutionReverb_Standalone.dir/build.make CMakeFiles/DynamicConvolutionReverb_Standalone.dir/clean
-.PHONY : CMakeFiles/DynamicConvolutionReverb_Standalone.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/DynamicConvolutionReverb_VST3.dir
 
 # All Build rule for target.
@@ -277,7 +240,7 @@ CMakeFiles/DynamicConvolutionReverb_VST3.dir/all: CMakeFiles/DynamicConvolutionR
 CMakeFiles/DynamicConvolutionReverb_VST3.dir/all: CMakeFiles/DynamicConvolutionReverb_vst3_helper.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicConvolutionReverb_VST3.dir/build.make CMakeFiles/DynamicConvolutionReverb_VST3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicConvolutionReverb_VST3.dir/build.make CMakeFiles/DynamicConvolutionReverb_VST3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/test/reverseverb/build/CMakeFiles --progress-num=32,33,34,35,36,37,38,39,40 "Built target DynamicConvolutionReverb_VST3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/test/reverseverb/build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31 "Built target DynamicConvolutionReverb_VST3"
 .PHONY : CMakeFiles/DynamicConvolutionReverb_VST3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -294,7 +257,7 @@ DynamicConvolutionReverb_VST3: CMakeFiles/DynamicConvolutionReverb_VST3.dir/rule
 # codegen rule for target.
 CMakeFiles/DynamicConvolutionReverb_VST3.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicConvolutionReverb_VST3.dir/build.make CMakeFiles/DynamicConvolutionReverb_VST3.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/test/reverseverb/build/CMakeFiles --progress-num=32,33,34,35,36,37,38,39,40 "Finished codegen for target DynamicConvolutionReverb_VST3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/test/reverseverb/build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31 "Finished codegen for target DynamicConvolutionReverb_VST3"
 .PHONY : CMakeFiles/DynamicConvolutionReverb_VST3.dir/codegen
 
 # clean rule for target.
@@ -309,7 +272,7 @@ CMakeFiles/DynamicConvolutionReverb_VST3.dir/clean:
 CMakeFiles/DynamicConvolutionReverb_vst3_helper.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicConvolutionReverb_vst3_helper.dir/build.make CMakeFiles/DynamicConvolutionReverb_vst3_helper.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicConvolutionReverb_vst3_helper.dir/build.make CMakeFiles/DynamicConvolutionReverb_vst3_helper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/test/reverseverb/build/CMakeFiles --progress-num=41,42 "Built target DynamicConvolutionReverb_vst3_helper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/test/reverseverb/build/CMakeFiles --progress-num=32,33 "Built target DynamicConvolutionReverb_vst3_helper"
 .PHONY : CMakeFiles/DynamicConvolutionReverb_vst3_helper.dir/all
 
 # Build rule for subdir invocation for target.
@@ -326,7 +289,7 @@ DynamicConvolutionReverb_vst3_helper: CMakeFiles/DynamicConvolutionReverb_vst3_h
 # codegen rule for target.
 CMakeFiles/DynamicConvolutionReverb_vst3_helper.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicConvolutionReverb_vst3_helper.dir/build.make CMakeFiles/DynamicConvolutionReverb_vst3_helper.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/test/reverseverb/build/CMakeFiles --progress-num=41,42 "Finished codegen for target DynamicConvolutionReverb_vst3_helper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/test/reverseverb/build/CMakeFiles --progress-num=32,33 "Finished codegen for target DynamicConvolutionReverb_vst3_helper"
 .PHONY : CMakeFiles/DynamicConvolutionReverb_vst3_helper.dir/codegen
 
 # clean rule for target.

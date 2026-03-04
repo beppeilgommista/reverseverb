@@ -1,6 +1,5 @@
 /home/test/reverseverb/build/CMakeFiles/DynamicConvolutionReverb.dir
 /home/test/reverseverb/build/CMakeFiles/DynamicConvolutionReverb_All.dir
-/home/test/reverseverb/build/CMakeFiles/DynamicConvolutionReverb_Standalone.dir
 /home/test/reverseverb/build/CMakeFiles/DynamicConvolutionReverb_VST3.dir
 /home/test/reverseverb/build/CMakeFiles/DynamicConvolutionReverb_vst3_helper.dir
 /home/test/reverseverb/build/CMakeFiles/edit_cache.dir

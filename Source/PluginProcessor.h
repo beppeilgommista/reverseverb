@@ -23,10 +23,24 @@ public:
     void setCurrentProgram (int index) override {}
     const juce::String getProgramName (int index) override { return {}; }
     void changeProgramName (int index, const juce::String& newName) override {}
-    void getStateInformation (juce::MemoryBlock& destData) override {}
-    void setStateInformation (const void* data, int sizeInBytes) override {}
+    void getStateInformation (juce::MemoryBlock& destData) override;
+    void setStateInformation (const void* data, int sizeInBytes) override;
+
+    // public helpers for the editor
+    void loadImpulseResponseFile (const juce::File& file);
+    bool isIrLoaded() const { return irLoaded; }
+    juce::String getIrFileName() const { return irFileName; }
 
 private:
+    friend class DynamicConvolutionReverbAudioProcessorEditor;
+
+    // state information
+    bool irLoaded = false;
+    juce::String irFileName;
+
+    // parameter management
+    juce::AudioProcessorValueTreeState parameters;
+
     // DSP Objects
     juce::dsp::Convolution convolutionReverb;
     
@@ -41,6 +55,12 @@ private:
     // Buffers for FFT processing
     std::array<float, fftSize * 2> fftData;
     std::array<float, fftSize> irData;
+
+    // dynamic equaliser filter applied to the convolution output
+    juce::dsp::ProcessorDuplicator<juce::dsp::FIR::Filter<float>, juce::dsp::FIR::Coefficients<float>> dynamicEQ;
+
+    // helper to recompute EQ coefficients based on the incoming (direct) audio
+    void updateDynamicEQ (const juce::AudioBuffer<float>& directBuffer);
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DynamicConvolutionReverbAudioProcessor)
 };

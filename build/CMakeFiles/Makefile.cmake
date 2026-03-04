@@ -82,7 +82,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/DynamicConvolutionReverb.dir/DependInfo.cmake"
   "CMakeFiles/DynamicConvolutionReverb_All.dir/DependInfo.cmake"
-  "CMakeFiles/DynamicConvolutionReverb_Standalone.dir/DependInfo.cmake"
   "CMakeFiles/DynamicConvolutionReverb_VST3.dir/DependInfo.cmake"
   "CMakeFiles/DynamicConvolutionReverb_vst3_helper.dir/DependInfo.cmake"
   )

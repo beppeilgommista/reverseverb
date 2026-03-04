@@ -833,3 +833,75 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "extras/Build/CMake/JUCECheckAtomic.cmake:73 (try_compile)"
+      - "extras/Build/CMake/JUCECheckAtomic.cmake:128 (_juce_create_atomic_target)"
+      - "extras/Build/CMake/JUCEModuleSupport.cmake:57 (include)"
+      - "CMakeLists.txt:50 (include)"
+    directories:
+      source: "/home/test/reverseverb/build/JUCE/tools/check_atomic_dir_bEYPYuIjELi1O2aS/CMakeFiles/CMakeTmp"
+      binary: "/home/test/reverseverb/build/JUCE/tools/check_atomic_dir_bEYPYuIjELi1O2aS/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/test/reverseverb/build/JUCE/tools/check_atomic_dir_bEYPYuIjELi1O2aS/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5033b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5033b.dir/build.make CMakeFiles/cmTC_5033b.dir/build
+        gmake[1]: ingresso nella directory «/home/test/reverseverb/build/JUCE/tools/check_atomic_dir_bEYPYuIjELi1O2aS/CMakeFiles/CMakeTmp»
+        Building CXX object CMakeFiles/cmTC_5033b.dir/check_atomic_rcVsvfXKntdea4Ky.cpp.o
+        /usr/bin/c++   -std=c++17 -o CMakeFiles/cmTC_5033b.dir/check_atomic_rcVsvfXKntdea4Ky.cpp.o -c /home/test/reverseverb/build/JUCE/tools/check_atomic_rcVsvfXKntdea4Ky.cpp
+        Linking CXX executable cmTC_5033b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5033b.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_5033b.dir/check_atomic_rcVsvfXKntdea4Ky.cpp.o -o cmTC_5033b
+        gmake[1]: uscita dalla directory «/home/test/reverseverb/build/JUCE/tools/check_atomic_dir_bEYPYuIjELi1O2aS/CMakeFiles/CMakeTmp»
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "extras/Build/CMake/JUCECheckAtomic.cmake:73 (try_compile)"
+      - "extras/Build/CMake/JUCECheckAtomic.cmake:128 (_juce_create_atomic_target)"
+      - "extras/Build/CMake/JUCEModuleSupport.cmake:57 (include)"
+      - "CMakeLists.txt:50 (include)"
+    directories:
+      source: "/home/test/reverseverb/build/JUCE/tools/check_atomic_dir_Lj2jceQXjZrLiTis/CMakeFiles/CMakeTmp"
+      binary: "/home/test/reverseverb/build/JUCE/tools/check_atomic_dir_Lj2jceQXjZrLiTis/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/test/reverseverb/build/JUCE/tools/check_atomic_dir_Lj2jceQXjZrLiTis/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_596a0/fast
+        gmake[1]: ingresso nella directory «/home/test/reverseverb/build/JUCE/tools/check_atomic_dir_Lj2jceQXjZrLiTis/CMakeFiles/CMakeTmp»
+        /usr/bin/gmake  -f CMakeFiles/cmTC_596a0.dir/build.make CMakeFiles/cmTC_596a0.dir/build
+        gmake[2]: ingresso nella directory «/home/test/reverseverb/build/JUCE/tools/check_atomic_dir_Lj2jceQXjZrLiTis/CMakeFiles/CMakeTmp»
+        Building CXX object CMakeFiles/cmTC_596a0.dir/check_atomic_rDj1imkvPKB46BBR.cpp.o
+        /usr/bin/c++   -std=c++17 -o CMakeFiles/cmTC_596a0.dir/check_atomic_rDj1imkvPKB46BBR.cpp.o -c /home/test/reverseverb/build/JUCE/tools/check_atomic_rDj1imkvPKB46BBR.cpp
+        Linking CXX executable cmTC_596a0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_596a0.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_596a0.dir/check_atomic_rDj1imkvPKB46BBR.cpp.o -o cmTC_596a0
+        gmake[2]: uscita dalla directory «/home/test/reverseverb/build/JUCE/tools/check_atomic_dir_Lj2jceQXjZrLiTis/CMakeFiles/CMakeTmp»
+        gmake[1]: uscita dalla directory «/home/test/reverseverb/build/JUCE/tools/check_atomic_dir_Lj2jceQXjZrLiTis/CMakeFiles/CMakeTmp»
+        
+      exitCode: 0
+...
