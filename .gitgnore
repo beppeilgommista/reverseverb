@@ -1,0 +1,8 @@
+# CMake builds
+build/
+out/
+.vs/
+*.user
+
+# JUCE auto-generated
+JuceLibraryCode/
